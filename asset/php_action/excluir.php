@@ -7,11 +7,11 @@
 	$sql = "DELETE FROM cliente WHERE id = '$id'";
 	if(mysqli_query($connect, $sql)){
 		echo "<div class='alert-success'>Deletado com Sucesso!</div>";
-		header('Location: index.php');	
+		header('Location: ../../listarCliente.php');	
     }	
 	else{
 		echo "<div class='alert-success'>Erro ao Sucesso!</div>";
-	        header('Location: index.php');
+	        header('Location: ../../listarCliente.php');
     }
 		
 
