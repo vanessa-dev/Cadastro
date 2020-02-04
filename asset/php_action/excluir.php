@@ -2,16 +2,16 @@
     require_once"connect_db.php";
 ?>
 <?php
-    session_start();
-	$id = mysqli_escape_string($connect, $_POST['id']);
+       //deletando usuario do banco de dados
+	$id = mysqli_escape_string($connect, $_GET['id']);
 	$sql = "DELETE FROM cliente WHERE id = '$id'";
 	if(mysqli_query($connect, $sql)){
-        $_SESSION['mensagem'] = "Deletado com sucesso!";
-		
+		echo "<div class='alert-success'>Deletado com Sucesso!</div>";
+		header('Location: index.php');	
     }	
 	else{
-        $_SESSION['mensagem'] = "Erro ao deletar";
-		header('Location: index.php');
+		echo "<div class='alert-success'>Erro ao Sucesso!</div>";
+	        header('Location: index.php');
     }
 		
 
