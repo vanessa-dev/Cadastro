@@ -2,8 +2,8 @@
     //conexao 
     require_once"connect_db.php";
     //includes de arquivos padrao do layout
-    require_once"asset/includes/header.php";
-    require_once"asset/includes/body.php";
+    require_once"../includes/header.php";
+    require_once"../includes/body.php";
     //select
     if(isset($_GET['id'])){
         $dados=mysqli_escape_string($connect,$_GET['value']);
@@ -47,5 +47,5 @@
 </main>
 <?php
     //footer
-    require_once"asset/includes/footer.php";
+    require_once"../includes/footer.php";
 ?>
