@@ -1,7 +1,7 @@
 <?php
     //session
    
-    require_once"asset/function/connect_db.php";
+    require_once"connect_db.php";
     //obtendo os inputs do usuario
     $nome = mysqli_escape_string($connect,$_POST['nome']);
     $endereco = mysqli_escape_string($connect,$_POST['endereco']);
