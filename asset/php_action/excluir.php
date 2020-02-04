@@ -10,7 +10,7 @@
 		header('Location: ../../listarCliente.php');	
     }	
 	else{
-		echo "<div class='alert-success'>Erro ao Sucesso!</div>";
+		echo "<div class='alert-success'>Erro ao Deletar!</div>";
 	        header('Location: ../../listarCliente.php');
     }
 		
